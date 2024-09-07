@@ -27,9 +27,11 @@ export default function RootLayout({ children }) {
       >
 
         <Navbar />
-        <Sidebar />
-        <main>
-          {children}
+        <main className="flex justify-between  ">
+          <Sidebar />
+          <div className="w-[81%] h-full ">
+            {children}
+          </div>
         </main>
       </body>
     </html>
